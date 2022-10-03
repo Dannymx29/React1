@@ -11,6 +11,16 @@ module.exports = {
     },
     resolve:{
         extensions: ['.js', '.jsx'],
+        alias: {
+            '@assets': path.resolve(__dirname, 'src/assets/'),
+            '@icons': path.resolve(__dirname, 'src/assets/icons/'),
+            '@logos': path.resolve(__dirname, 'src/assets/logos/'),
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/'),
+            '@pages': path.resolve(__dirname, 'src/pages/'),            
+            '@routes': path.resolve(__dirname, 'src/routes/'),
+            '@style': path.resolve(__dirname, 'src/style/'),            
+        },
     },
     mode: 'production',
     module:{
@@ -35,6 +45,10 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                type: 'asset'
             },
         ]
     },

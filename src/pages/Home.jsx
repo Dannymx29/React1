@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductList from '../style/ProductDetail.scss';
+import ProductList from '@style/ProductDetail.scss';
 
 const Home = () => {
 	return (
