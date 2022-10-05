@@ -1,12 +1,11 @@
 import React from 'react';
 import ProductItem from '@components/ProductItem';
-import useGetProducts from '@hooks/useGetProducts';
-import '@style/ProductList.scss';
+import useGetProducts from '../hooks/useGetProducts';
+import '@styles/ProductList.scss';
 
-const API = 'https://api.escuelajs.co/api/v1/products';
+const API = 'http://api.escuelajs.co/api/v1/products';
 
 const ProductList = () => {
-
 	const products = useGetProducts(API);
 
 	return (

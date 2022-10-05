@@ -1,6 +1,6 @@
 import React from 'react';
 import OrderItem from '@components/OrderItem';
-import '@style/checkout.scss';
+import '@styles/Checkout.scss';
 
 const Checkout = () => {
 	return (
@@ -22,4 +22,4 @@ const Checkout = () => {
 	);
 }
 
-export default Checkout
+export default Checkout;

@@ -1,16 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from'react-router-dom';
 import Layout from '@containers/Layout';
-import Home from'@pages/Home';
+import Home from '@pages/Home';
 import Login from '@pages/Login';
-import RecoveryPassword from '@pages/RecoveryPassword';
+import PasswordRecovery from '@pages/PasswordRecovery';
 import SendEmail from '@pages/SendEmail';
 import NewPassword from '@pages/NewPassword';
 import MyAccount from '@pages/MyAccount';
 import CreateAccount from '@pages/CreateAccount';
 import Checkout from '@pages/Checkout';
 import Orders from '@pages/Orders';
-import NotFound from'@pages/NotFound';
+import NotFound from '@pages/NotFound';
+import '@styles/global.css';
 
 const App = () => {
 	return (
@@ -19,7 +20,7 @@ const App = () => {
 			<Routes>
 				<Route path="/" element={<Home />}/>
 				<Route path="/login" element={<Login />} />
-				<Route path="/recovery-password" element={<RecoveryPassword />} />
+				<Route path="/password-recovery" element={<PasswordRecovery />} />
 				<Route path="/send-email" element={<SendEmail />} />
 				<Route path="/new-password" element={<NewPassword />} />
 				<Route path="/account" element={<MyAccount />} />
